@@ -120,10 +120,6 @@ func (router *RouteHandler) scheduleMeeting(w http.ResponseWriter, r *http.Reque
 
 	err := json.NewDecoder(r.Body).Decode(&meet)
 	meet.CreationTime = time.Now().Unix()
-	date= meet.startTime+" MST"  //"02 Jan 06 15:04"
-	parse_time, _ := time.Parse(time.RFC822, date)
-	meet.startTime=parse_time.Unix()
-
 	const charset = "abcdefghijklmnopqrstuvwxyz" + "0123456789"
 	meet.ID=StringWithCharset(10, charset)
 

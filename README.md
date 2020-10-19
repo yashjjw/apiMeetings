@@ -6,7 +6,7 @@ A set of rest API's build using GoLang for scheduling and querying meetings.
 
 Clone into the repo
 ```bash 
-git clone https://github.com/yashjjw/apiMeetings
+git clone https://github.com/yashjjw/appointy-project
 ```
 Install the go packages used in the project
 ```bash

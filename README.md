@@ -1,4 +1,4 @@
-# apiMeetings
+# appointy-project
 
 A set of rest API's build using GoLang for scheduling and querying meetings.
 
